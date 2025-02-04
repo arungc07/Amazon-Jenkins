@@ -21,11 +21,6 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('buildstart') {
-            steps {
-                sh 'echo "Build sarts"'
-            }
-        }
         stage('build') {
             steps {
                  sh 'mvn clean install'
